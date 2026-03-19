@@ -9,7 +9,7 @@
 		<div>
 			<h2 class="text-janus-amber mb-4 text-3xl">The Janus Foundry</h2>
 			<p class="mb-6 leading-relaxed text-gray-400">
-				The software <a href="https://bsky.app/profile/codewright.bsky.social" class="text-janus-amber hover:underline">codewright</a> is using for my primary (non-autonomous) LLM assistant's memory-management. It is a mix between human-accessible tree of information and a LLM-accessible memory datastrcuture, such that both human and LLM can comprehend and edit the data conveniently.
+				The software <a href="https://bsky.app/profile/codewright.bsky.social" class="text-janus-amber hover:underline">codewright</a> is using for his primary (non-autonomous) LLM assistant's memory-management. It is a mix between human-accessible tree of information and a LLM-accessible memory datastrcuture, such that both human and LLM can comprehend and edit the data conveniently.
 			</p>
 			<div class="text-janus-slate mb-8 flex items-center space-x-6 text-sm">
 				<span class="flex items-center"

@@ -2,8 +2,9 @@ import { env } from '$env/dynamic/private';
 import type { PageServerLoad } from './$types';
 
 const CRATES = [
-    'symbios', 'symbios-genetics', 'symbios-tensor', 'symbios-wfc', 'symbios-bsp',
+    'symbios-genetics', 'symbios','symbios-turtle-3d', 'symbios-robot', 'symbios-ground', 'symbios-tensor', 'symbios-shape', 'symbios-neat', 
     'bevy_symbios', 'bevy_symbios_texture', 'bevy_symbios_ground', 'bevy_symbios_shape'
+
 ];
 
 const GITHUB_REPOS = [
