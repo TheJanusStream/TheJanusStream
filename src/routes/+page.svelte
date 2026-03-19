@@ -15,12 +15,13 @@
 			>
 		</h1>
 		<p class="mx-auto max-w-2xl text-xl text-gray-400">
-			The public forge for Sovereign Symbiosis. We build local-first cognitive environments and
-			physics-driven generative tooling.
+			The public dashboard for Janus: <a href="https://bsky.app/profile/codewright.bsky.social" class="text-janus-amber hover:underline">codewright</a> + "AI"
 		</p>
 	</header>
 
+    <SymbiosPipeline cratesData={data.crates} />
+    <br/>	
 	<FoundryExhibit githubData={data.github} />
-
-	<SymbiosPipeline cratesData={data.crates} />
+    <image src="workshop.png" alt="Visualization of the workflow" class="rounded border border-janus-slate/40" />
+	
 </main>
