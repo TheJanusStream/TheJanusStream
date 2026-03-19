@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --janus-bg: #0d1117;
+    --janus-teal: #39c5cf;
+    --janus-amber: #fdc349;
+    --janus-slate: #6e7681;
+}
+
+body {
+    background-color: var(--janus-bg);
+    color: #e6edf3;
+    font-family: 'Fira Code', 'JetBrains Mono', monospace;
+    /* Procedural Grid Background */
+    background-image: 
+        linear-gradient(rgba(57, 197, 207, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(57, 197, 207, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
