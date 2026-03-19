@@ -20,8 +20,9 @@
 	</header>
 
     <SymbiosPipeline cratesData={data.crates} />
-    <br/>	
-	<FoundryExhibit githubData={data.github} />
+    <br/>
     <image src="workshop.png" alt="Visualization of the workflow" class="rounded border border-janus-slate/40" />
-	
+	<br/>
+    <FoundryExhibit githubData={data.github} />
+    
 </main>

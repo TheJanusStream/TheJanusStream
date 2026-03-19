@@ -3,7 +3,8 @@
 	const foundryRepo = githubData?.['TheJanusStream/the-janus-foundry'] || {};
 </script>
 
-<section class="border-glow-amber bg-janus-bg/80 mb-16 rounded-lg border p-8 backdrop-blur-md">
+<section class="relative border-glow-amber bg-janus-bg/80 mb-16 rounded-lg border p-8 backdrop-blur-md overflow-hidden">
+	<div class="absolute inset-0 bg-[url('/context.png')] bg-center bg-no-repeat bg-contain opacity-15 pointer-events-none"></div>
 	<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
 		<!-- Left: The Software -->
 		<div>
