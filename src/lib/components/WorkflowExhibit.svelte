@@ -3,7 +3,7 @@
     // but the script tag is here for future extensibility.
 </script>
 
-<section class="group relative mb-16 rounded-lg overflow-hidden border border-janus-slate/40">
+<section class="group relative rounded-lg overflow-hidden border border-janus-slate/40">
     <div class="absolute inset-0 bg-[url('/workshop.png')] bg-center bg-no-repeat bg-cover transition-opacity duration-500 group-hover:opacity-20 pointer-events-none"></div>
     <div class="absolute inset-0 bg-janus-bg/80 backdrop-blur-md opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
 

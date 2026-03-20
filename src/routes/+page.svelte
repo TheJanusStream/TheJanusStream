@@ -1,11 +1,13 @@
 <script lang="ts">
+	import ExhibitCarousel from '$lib/components/ExhibitCarousel.svelte';
 	import FoundryExhibit from '$lib/components/FoundryExhibit.svelte';
 	import SymbiosPipeline from '$lib/components/SymbiosPipeline.svelte';
-	import WorkflowExhibit from '$lib/components/WorkflowExhibit.svelte'; // <-- Import it here
+	import WorkflowExhibit from '$lib/components/WorkflowExhibit.svelte';
     import type { PageData } from './$types';
 
-	// Svelte 5 syntax for accepting server load data
 	let { data }: { data: PageData } = $props();
+
+	const exhibitLabels = ['Symbios', 'Workflow', 'Foundry'];
 </script>
 
 <main class="mx-auto max-w-7xl px-6 py-16">
@@ -20,17 +22,15 @@
 		</p>
 	</header>
 
-    <SymbiosPipeline cratesData={data.crates} />
-    <br/>
-    
-    <!-- Replace the raw <image> tag with the new component -->
-    <WorkflowExhibit />
-
-	<br/>
-    <FoundryExhibit githubData={data.github} />
-    
-    <!-- Optional: Add the Sovereign Spine image at the very bottom as a footer/anchor 
-    <div class="mt-16 w-full flex justify-center opacity-60 hover:opacity-100 transition-opacity duration-700">
-        <img src="context.png" alt="The Sovereign Spine" class="max-w-3xl rounded-lg border border-janus-slate/30 shadow-lg shadow-janus-teal/10" />
-    </div>-->
+	<ExhibitCarousel labels={exhibitLabels}>
+		{#snippet children(current)}
+			{#if current === 0}
+				<SymbiosPipeline cratesData={data.crates} />
+			{:else if current === 1}
+				<WorkflowExhibit />
+			{:else}
+				<FoundryExhibit githubData={data.github} />
+			{/if}
+		{/snippet}
+	</ExhibitCarousel>
 </main>

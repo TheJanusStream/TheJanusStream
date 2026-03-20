@@ -3,7 +3,7 @@
 	const foundryRepo = githubData?.['TheJanusStream/the-janus-foundry'] || {};
 </script>
 
-<section class="group relative border-glow-amber mb-16 rounded-lg border overflow-hidden">
+<section class="group relative border-glow-amber rounded-lg border overflow-hidden">
 	<div class="absolute inset-0 bg-[url('/context.png')] bg-center bg-no-repeat bg-cover transition-opacity duration-500 group-hover:opacity-20 pointer-events-none"></div>
 	<div class="absolute inset-0 bg-janus-bg/80 backdrop-blur-md opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
 
