@@ -25,7 +25,7 @@
 	<ExhibitCarousel labels={exhibitLabels}>
 		{#snippet children(current)}
 			{#if current === 0}
-				<SymbiosPipeline cratesData={data.crates} />
+				<SymbiosPipeline cratesData={data.crates} githubData={data.github} />
 			{:else if current === 1}
 				<WorkflowExhibit />
 			{:else}
