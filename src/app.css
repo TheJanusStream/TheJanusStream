@@ -40,3 +40,23 @@
     box-shadow: 0 0 10px rgba(253, 195, 73, 0.1);
   }
 }
+
+@keyframes synaptic-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@layer utilities {
+  .animate-synaptic {
+    background-size: 200% auto;
+    animation: synaptic-flow 6s linear infinite;
+  }
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+}
