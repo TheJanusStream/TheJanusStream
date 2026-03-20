@@ -1,6 +1,7 @@
 <script lang="ts">
 	import FoundryExhibit from '$lib/components/FoundryExhibit.svelte';
 	import SymbiosPipeline from '$lib/components/SymbiosPipeline.svelte';
+	import WorkflowExhibit from '$lib/components/WorkflowExhibit.svelte'; // <-- Import it here
     import type { PageData } from './$types';
 
 	// Svelte 5 syntax for accepting server load data
@@ -21,8 +22,15 @@
 
     <SymbiosPipeline cratesData={data.crates} />
     <br/>
-    <image src="workshop.png" alt="Visualization of the workflow" class="rounded border border-janus-slate/40" />
+    
+    <!-- Replace the raw <image> tag with the new component -->
+    <WorkflowExhibit />
+
 	<br/>
     <FoundryExhibit githubData={data.github} />
     
+    <!-- Optional: Add the Sovereign Spine image at the very bottom as a footer/anchor 
+    <div class="mt-16 w-full flex justify-center opacity-60 hover:opacity-100 transition-opacity duration-700">
+        <img src="context.png" alt="The Sovereign Spine" class="max-w-3xl rounded-lg border border-janus-slate/30 shadow-lg shadow-janus-teal/10" />
+    </div>-->
 </main>
