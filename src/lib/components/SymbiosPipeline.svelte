@@ -37,7 +37,7 @@
 
             <!-- Layer 2 (middle): Bevy Integration -->
             <div>
-                <h3 class="text-lg text-janus-slate border-b border-janus-slate pb-2 mb-4">2. Integration Layer (Bevy)</h3>
+                <h3 class="text-lg text-janus-slate border-b border-janus-slate pb-2 mb-4">2. Integration Layer (for Bevy)</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {#each ['bevy_symbios', 'bevy_symbios_texture', 'bevy_symbios_ground', 'bevy_symbios_shape'] as crate (crate)}
                         {@const c = getCrate(crate)}
@@ -54,7 +54,7 @@
 
             <!-- Layer 3 (top): Applications -->
             <div>
-                <h3 class="text-lg text-janus-slate border-b border-janus-slate pb-2 mb-4">3. Interactive Canvases (WASM)</h3>
+                <h3 class="text-lg text-janus-slate border-b border-janus-slate pb-2 mb-4">3. Interactive Canvases (as WASM)</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
                     <div class="p-4 border border-janus-amber/60 rounded bg-janus-amber/5">
@@ -85,7 +85,6 @@
 
                 </div>
             </div>
-
         </div>
     </div>
 </section>
