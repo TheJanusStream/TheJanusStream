@@ -1,33 +1,23 @@
 <script lang="ts">
-    // No dynamic props needed for this specific exhibit, 
+    // No dynamic props needed for this specific exhibit,
     // but the script tag is here for future extensibility.
 </script>
 
-<section class="mb-16 group relative rounded-lg overflow-hidden border border-janus-slate/40 bg-janus-bg/80 backdrop-blur-md">
-    
-    <!-- Top: The Visual Artifact -->
-    <div class="w-full border-b border-janus-slate/40 relative overflow-hidden bg-black">
-        <img 
-            src="workshop.png" 
-            alt="The Cybernetic DevOps Loop" 
-            class="w-full h-auto object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100" 
-        />
-        <!-- Subtle gradient overlay to blend the image into the text section -->
-        <div class="absolute inset-0 bg-gradient-to-t from-janus-bg to-transparent opacity-80"></div>
-    </div>
+<section class="group relative mb-16 rounded-lg overflow-hidden border border-janus-slate/40">
+    <div class="absolute inset-0 bg-[url('/workshop.png')] bg-center bg-no-repeat bg-cover transition-opacity duration-500 group-hover:opacity-20 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-janus-bg/80 backdrop-blur-md opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
 
-    <!-- Bottom: The Explanation -->
-    <div class="relative z-10 p-8">
+    <div class="relative z-10 p-8 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
         <header class="mb-8">
             <h2 class="text-3xl text-gray-100 mb-2">The Sovereign Workflow</h2>
             <p class="text-gray-400 max-w-3xl leading-relaxed">
-                We do not build autonomous agents to replace human effort; we build symbiotic pipelines to augment human capability. 
+                We do not build autonomous agents to replace human effort; we build symbiotic pipelines to augment human capability.
                 This exhibit visualizes our <strong>"Glass Box"</strong> approach to AI engineering, moving from intent to verified reality.
             </p>
         </header>
-        
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
+
             <!-- Step 1: Amber / Intent -->
             <div class="relative pl-6">
                 <div class="absolute left-0 top-1 bottom-1 w-1 bg-janus-amber rounded-full shadow-[0_0_8px_rgba(253,195,73,0.6)]"></div>
@@ -48,9 +38,8 @@
 
             <!-- Step 3: Red / Audit -->
             <div class="relative pl-6">
-                <!-- Using a custom red hex to match the laser in the image -->
-                <div class="absolute left-0 top-1 bottom-1 w-1 bg-[#f85149] rounded-full shadow-[0_0_8px_rgba(248,81,73,0.6)]"></div>
-                <h3 class="text-xl text-[#f85149] mb-2 font-bold tracking-wide">3. Adversarial Audit</h3>
+                <div class="absolute left-0 top-1 bottom-1 w-1 bg-janus-red rounded-full shadow-[0_0_8px_rgba(248,81,73,0.6)]"></div>
+                <h3 class="text-xl text-janus-red mb-2 font-bold tracking-wide">3. Adversarial Audit</h3>
                 <p class="text-sm text-gray-400 leading-relaxed">
                     Artifacts face a "Zero-Trust Roast" before integration. Specialized auditor personas actively try to break the generated code. We embrace this friction; compiler errors and logical flaws are the fuel for our next iteration.
                 </p>
