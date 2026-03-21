@@ -52,6 +52,8 @@ function extractGitHubSlug(url: string | null): string | null {
     return match ? match[1].replace(/\.git$/, '') : null;
 }
 
+export const prerender = true;
+
 export const load: PageServerLoad = async ({ fetch }) => {
     const cratesData: Record<string, CrateInfo> = {};
     const githubData: Record<string, GitHubInfo> = {};
