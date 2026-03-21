@@ -22,7 +22,7 @@
     <span class="inline-block w-3 h-10 ml-2 bg-janus-amber animate-blink shadow-[0_0_8px_rgba(253,195,73,0.6)]"></span>
 </h1>
 		<p class="mx-auto max-w-2xl text-xl text-gray-400">
-			The public dashboard for Janus: <a href="https://bsky.app/profile/codewright.bsky.social" class="text-janus-amber hover:underline">codewright</a> + "AI"
+			Public Dashboard for Janus: <a href="https://bsky.app/profile/codewright.bsky.social" class="text-janus-amber hover:underline">codewright</a> + "AI"
 		</p>
 	</header>
 
