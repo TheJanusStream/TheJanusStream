@@ -43,6 +43,7 @@ jobs:
         # We pass it as an environment variable so SvelteKit's fetch logic can use it to bypass API limits.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: npm run build
 
       - name: Upload Pages artifact
