@@ -60,7 +60,9 @@ Review this text.`,
                 <div class="absolute left-0 top-1 bottom-1 w-1 bg-janus-amber rounded-full shadow-[0_0_8px_rgba(253,195,73,0.6)]"></div>
                 <h3 class="text-xl text-janus-amber mb-2 font-bold tracking-wide">1. Strategic Intent</h3>
                 <p class="text-sm text-gray-400 leading-relaxed">
-                    The human acts as the Strategic Director. Together with an AI assistant (non-autonomous, LLM chat-bot with memory), they define the problem space and establish the strategic direction. They do research, weigh options, make decisions, and write instructions for coding-agents.
+                    The human acts as the Strategic Director. Together with an AI assistant (non-autonomous, LLM chat-bot with memory), they define the problem space and establish the strategic direction.</p>
+                    <br/>
+                <p class="text-sm text-gray-400 leading-relaxed"> They do research, weigh options, make decisions, and write instructions for coding-agents.
                 </p>
             </div>
 
