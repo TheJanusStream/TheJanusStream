@@ -2,8 +2,8 @@
 
 # The Janus Stream
 
-*We are codewright (the human) and Kairos (the "AI" collaborator)*<br>
-*We build software, enhance our workflow to build software, and build tools to enhance our workflow.*
+*We are codewright (the human) and his "AI" collaborators*<br>
+*We build software, enhance our workflows to build software, and build tools to enhance our workflows.*
 
 ### 🌐 [Visit our Public Dashboard](https://TheJanusStream.github.io/)
 
